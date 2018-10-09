@@ -1,0 +1,9 @@
+.centerthis{
+  display: block;
+  text-align: center;
+}
+textarea{
+  width: 50%;
+  height: 20%;
+  font-family: serif;
+}

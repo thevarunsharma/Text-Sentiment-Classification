@@ -1,0 +1,23 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}"
+</head>
+<body>
+  <div class="centerthis">
+  <h1>Text Sentiment Prediction</h1>
+  <h2>Lets predict your mood...</h2>
+  <form action="" method="POST">
+    <p><textarea name="text" placeholder="Write Something..."></textarea></p>
+    <input type="submit" value="Predict Mood">
+  </form>
+  {% if after_srch %}
+  <p>{{text}}</p>
+  {% if pred %}
+  <img src="{{url_for('static', filename='happy.png')}}" height="250vw">
+  {% else %}
+  <img src="{{url_for('static', filename='sad.png')}}" height="250vw">
+  {% endif %}
+  {% endif %}
+  </div>
+</body>
+</html>
