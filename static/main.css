@@ -7,3 +7,7 @@ textarea{
   height: 20%;
   font-family: serif;
 }
+pre{
+  font-family: serif;
+  font-size: 1.3vw;
+}

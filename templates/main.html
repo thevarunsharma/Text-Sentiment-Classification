@@ -11,7 +11,7 @@
     <input type="submit" value="Predict Mood">
   </form>
   {% if after_srch %}
-  <p>{{text}}</p>
+  <p><pre>{{text}}</pre></p>
   {% if pred %}
   <img src="{{url_for('static', filename='happy.png')}}" height="250vw">
   {% else %}
